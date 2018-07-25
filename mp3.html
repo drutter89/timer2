@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <audio id="myAudio">
+                <source src="alarm.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+              
+                       
+              <button onclick="playAudio()" type="button">Play Audio</button>
+              <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+              
+              <div id="wrapper">
+
+                <div id="display">00:05</div>
+          
+                <!-- Div containing our stopwatch controls -->
+                <div id="buttons">
+                  <button onclick="start()" id="start">Start</button>
+                  <button onclick="stop()" id="stop">Stop</button>
+                  <button onclick="reset()" id="reset">Reset</button>          
+                </div>                
+          
+              </div>
+          
+              <!-- jQuery -->
+              <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          
+              <!-- Script -->
+              <script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
